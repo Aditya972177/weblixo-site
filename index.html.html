@@ -784,13 +784,19 @@
         .info-text p {
             color: #64748b;
         }
-        .whatsapp-btn {
+        .whatsapp-btn, .email-btn {
             background: #25D366;
             width: 100%;
             margin-top: 20px;
         }
+        .email-btn {
+            background: #ea4335;
+        }
         .whatsapp-btn:hover {
             background: #1ebe57;
+        }
+        .email-btn:hover {
+            background: #d33c30;
         }
         /* Form Inputs */
         .input-group {
@@ -1000,7 +1006,7 @@
                     <ul>
                         <li><i class="fa-solid fa-check-circle"></i> 100% On-Time Delivery Guarantee</li>
                         <li><i class="fa-solid fa-check-circle"></i> Student-Friendly Pricing Options</li>
-                        <li><i class="fa-solid fa-check-circle"></i> 24/7 Priority WhatsApp Support</li>
+                        <li><i class="fa-solid fa-check-circle"></i> 24/7 Priority Support</li>
                         <li><i class="fa-solid fa-check-circle"></i> Live Code Explanations & Demos</li>
                         <li><i class="fa-solid fa-check-circle"></i> Plagiarism-Free & Custom Built</li>
                     </ul>
@@ -1049,7 +1055,7 @@
                     <div class="step-box reveal">
                         <div class="step-number">1</div>
                         <h4>Share Requirements</h4>
-                        <p>Submit your topic, requested tech stack, and deadline through our secure form or WhatsApp.
+                        <p>Submit your topic, requested tech stack, and deadline through our secure form or email.
                         </p>
                     </div>
                     <div class="step-box reveal" style="transition-delay: 150ms;">
@@ -1279,7 +1285,7 @@
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Up to 5 Responsive Pages</li>
                             <li><i class="fa-solid fa-check"></i> Contact Form Integration</li>
-                            <li><i class="fa-solid fa-check"></i> Direct WhatsApp Chat Button</li>
+                            <li><i class="fa-solid fa-check"></i> Direct Email Button</li>
                             <li><i class="fa-solid fa-check"></i> Express 5-Day Delivery</li>
                         </ul>
                         <button class="btn outline"
@@ -1381,19 +1387,18 @@
                 <div class="contact-grid reveal">
                     <div class="contact-info">
                         <h3>Chat with Us Directly</h3>
-                        <p>We believe in fast communication. Reach out via WhatsApp for maximum speed or drop us an
-                            email.</p>
-                        <div class="info-item">
-                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                            <div class="info-text">
-                                <h4>WhatsApp Support</h4>
-                                <p>+91 78146 58747</p>
-                            </div>
-                        </div>
+                        <p>We believe in fast communication. Reach out via email for prompt replies or drop us a message using the form below.</p>
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
                             <div class="info-text">
-                                <h4>Email Us</h4>
+                                <h4>Email Us Directly</h4>
+                                <p>abhinav9721774416@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-inbox"></i></div>
+                            <div class="info-text">
+                                <h4>Project Inquiries</h4>
                                 <p>projecthub@gmail.com</p>
                             </div>
                         </div>
@@ -1404,8 +1409,8 @@
                                 <p>24/7 Priority Assistance</p>
                             </div>
                         </div>
-                        <button onclick="window.open('https://wa.me/917814658747', '_blank')" class="btn whatsapp-btn">
-                            <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Open WhatsApp Chat
+                        <button onclick="window.location.href='mailto:abhinav9721774416@gmail.com'" class="btn email-btn">
+                            <i class="fa-regular fa-envelope" style="font-size: 1.2rem;"></i> Email Us Directly
                         </button>
                     </div>
                     <div class="contact-form">
@@ -1435,56 +1440,30 @@
         </section>
     </main>
     <!-- Submit Project Page -->
-    <main id="submit-project" class="page">
+   <main id="submit-project" class="page fade-in">
         <section class="form-section">
-            <div class="container" style="max-width: 800px;">
-                <h2 class="section-title reveal">Start Your Project</h2>
-                <p class="section-subtitle reveal">Fill out the details below, and we'll immediately review your
-                    requirements.</p>
-                <form id="project-form" class="reveal">
-                    <div class="grid-2">
-                        <div class="input-group">
-                            <label>Full Name</label>
-                            <input type="text" name="name" placeholder="John Doe" required>
-                        </div>
-                        <div class="input-group">
-                            <label>WhatsApp Number</label>
-                            <input type="tel" name="whatsapp" placeholder="+91 00000 00000" required>
-                        </div>
-                    </div>
-                    <div class="grid-2">
-                        <div class="input-group">
-                            <label>Email Address</label>
-                            <input type="email" name="email" placeholder="john@example.com" required>
-                        </div>
-                        <div class="input-group">
-                            <label>I am looking for a</label>
-                            <select name="userType" required>
-                                <option value="Student Project">Student College Project</option>
-                                <option value="Business Website">Business Website / App</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label>Project Title / Preferred Plan</label>
-                        <input type="text" name="title" id="form-plan-title" placeholder="e.g. Smart Attendance Tracker"
-                            required>
-                    </div>
-                    <div class="grid-2">
-                        <div class="input-group">
-                            <label>Tech Stack / Features needed</label>
-                            <input type="text" name="tech" placeholder="MERN, Python, PHP, etc.">
-                        </div>
-                        <div class="input-group">
-                            <label>Submission Deadline</label>
-                            <input type="date" name="deadline" required>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn"
-                        style="width: 100%; margin-top: 16px; padding: 16px; font-size: 1.1rem;">
-                        <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Discuss Further on WhatsApp
-                    </button>
+            <div class="container">
+                <h2 class="section-title">Submit Your Project</h2>
+                <p class="section-subtitle">Provide your requirements and we will build the perfect solution for you.
+                </p>
+                <form id="project-form">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="whatsapp" placeholder="Contact Number" required>
+                    <select name="userType" required>
+                        <option value="">Select User Type</option>
+                        <option value="Student">Student</option>
+                        <option value="Business">Business</option>
+                    </select>
+                    <input type="text" name="title" placeholder="Project / Website Title" required>
+                    <input type="text" name="tech" placeholder="Technology Required (Optional)">
+                    <label style="display:block; margin-bottom: 5px; font-weight: 500;">Deadline</label>
+                    <input type="date" name="deadline" required>
+                    <input type="number" name="budget" placeholder="Estimated Budget (₹)" required>
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 15px; font-size: 1.1rem;">Submit
+                        over Email</button>
                 </form>
+                <div id="message"></div>
             </div>
         </section>
     </main>
@@ -1525,6 +1504,7 @@
         </div>
     </footer>
     <script>
+        
         document.addEventListener('DOMContentLoaded', () => {
             // UI References
             const navbar = document.getElementById('navbar');
@@ -1676,7 +1656,9 @@
                     }, 100);
                 });
             });
-            const projectForm = document.getElementById('project-form');
+            
+             const projectForm = document.getElementById('project-form');
+            const messageBox = document.getElementById('message');
             if (projectForm) {
                 projectForm.addEventListener('submit', function (e) {
                     e.preventDefault();
@@ -1687,23 +1669,26 @@
                     const title = projectForm.title.value;
                     const tech = projectForm.tech.value || 'Not specified';
                     const deadline = projectForm.deadline.value;
-                    const whatsappMessage =
-                        `🚀 *New Project Request*%0A%0A` +
-                        `👤 Name: ${name}%0A` +
-                        `📧 Email: ${email}%0A` +
-                        `🎓 Client Type: ${userType}%0A` +
-                        `📌 Project: ${title}%0A` +
-                        `🛠 Tech needed: ${tech}%0A` +
-                        `📅 Deadline: ${deadline}`;
-                    const whatsappNumber = "917814658747";
-                    showToast("Redirecting to secure WhatsApp chat...");
-                    setTimeout(() => {
-                        window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, "_blank");
-                        projectForm.reset();
-                    }, 1500);
+                    const budget = projectForm.budget.value;
+                    const emailBody =
+                        `🚀 New Project Submission\n\n` +
+                        `👤 Name: ${name}\n` +
+                        `📧 Email: ${email}\n` +
+                        `📱 Contact: ${whatsapp}\n` +
+                        `🎓 User Type: ${userType}\n` +
+                        `📌 Project/Website: ${title}\n` +
+                        `🛠 Technology: ${tech}\n` +
+                        `📅 Deadline: ${deadline}\n` +
+                        `💰 Budget: ₹${budget}`;
+                    const mailtoURL = `mailto:projecthub@gmail.com?subject=New Project Submission: ${encodeURIComponent(title)}&body=${encodeURIComponent(emailBody)}`;
+                    window.location.href = mailtoURL;
+                    messageBox.style.color = "green";
+                    messageBox.textContent = "✅ Opening your email client…";
+                    projectForm.reset();
                 });
             }
-        });
+            }
+        );
     </script>
 </body>
 </html>
